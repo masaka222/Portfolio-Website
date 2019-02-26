@@ -1,0 +1,35 @@
+:root{
+  --color-grey-dark:    #404040;
+  --color-grey-light:   #707070;
+  --color-blue-light:   #11B3F1;
+  --color-blue-dark:    #10A8E3;
+  --color-yellow-light: #F1CB3B;
+  --color-yellow-dark:  #E3BF38;
+  --color-mint-light:   #00DDBF;
+  --color-mint-dark:    #00D0B4;
+  --color-red-light:    #FF4356;
+  --color-red-dark:     #F03F51;
+  --color-purple-light: #BD1CF0;
+  --color-purple-dakr:  #B21AE2;
+
+
+  --font-primary: 'Open Sans', sans-serif, 'Roboto';
+  --font-logo: 'Times New Roman', Times, serif;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; /* So that 1rem = 10px (10px/16px (browsers default) = 62.5% -> 1rem = 10px */
+}
+
+.App {
+}
