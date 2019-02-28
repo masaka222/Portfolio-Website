@@ -1,0 +1,19 @@
+.main{
+    background-color: var(--color-blue-light);
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+@media only screen and (max-width: 768px){
+    .main{
+        margin-left:    2rem;
+        margin-right:   2rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .main{
+        margin-left:    0rem;
+        margin-right:   0rem;
+    }
+}

@@ -1,0 +1,20 @@
+.sidebar{/*
+    background-color: rgba(0,0,0,.06);
+    height: 100%;
+    width: 26%;
+    float: right;*/
+
+    background-color: black;
+    width: 280px;
+    height: 100%;
+    float: right;
+}
+
+.sidebar__wrapper{
+    background-color: rgba(0,0,0,.06);
+    height: 100%;/*
+    width: 13%;*/
+    width: 40px;
+    float: left;
+    transform: translateX(-40px);
+}
