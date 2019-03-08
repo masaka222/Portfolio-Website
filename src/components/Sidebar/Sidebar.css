@@ -35,13 +35,44 @@
 }
 
 .sidebar__navigation-list-item a{
+    box-sizing: border-box;
     color: var(--color-grey-light);
-    margin: 20px 0 10px 10px;
+    padding: 13px 0 13px 10px;
     text-decoration: none;
-
+    position: relative;
+    
     display: flex;
     align-items: center;
     justify-content: left;
+
+    /* To change the text color on hover, more smoothly*/
+    transition: color .5s cubic-bezier(0,0,0,1);
+}
+
+/* ---- HOVER ANIMATION ---- */
+
+/* Black Box */
+.sidebar__navigation-list-item a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 280px;
+    background-color: black;
+    z-index: -1;
+    transition: all .3s cubic-bezier(0,0,0,.5);
+}
+
+/* Cursor on hover */
+.sidebar__navigation-list-item a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* Black Box Animation */
+.sidebar__navigation-list-item a:hover::before{
+    width: 100%;
 }
 
 .list-number{

@@ -9,36 +9,31 @@ class Sidebar extends Component {
             <ul className="sidebar__navigation-list">
                 <li className="sidebar__navigation-list-item">
                   <a href="#">
-                    <span className="list-black-bar"></span>
-                    <h4 className="list-number">00</h4>
-                    <h4 className="list-text">Vasilios Georgoudis</h4>
+                    <div className="list-number">00</div>
+                    <div className="list-text">Vasilios Georgoudis</div>
                   </a>
                 </li>
                 <li className="sidebar__navigation-list-item">
                   <a href="#">
-                    <span className="list-black-bar"></span>
-                    <h4 className="list-number">01</h4>
-                    <h4 className="list-text">What I do</h4>
+                    <div className="list-number">01</div>
+                    <div className="list-text">What I do</div>
                   </a>
                 </li>
                 <li className="sidebar__navigation-list-item">
                   <a href="#">
-                    <span className="list-black-bar"></span>
-                    <h4 className="list-number">02</h4>
-                    <h4 className="list-text">How I do it</h4>
+                    <div className="list-number">02</div>
+                    <div className="list-text">How I do it</div>
                   </a>
                 </li>
                 <li className="sidebar__navigation-list-item"><a href="#">
-                    <span className="list-black-bar"></span>
-                    <h4 className="list-number">03</h4>
-                    <h4 className="list-text">More Skills</h4>
+                    <div className="list-number">03</div>
+                    <div className="list-text">More Skills</div>
                   </a>
                 </li>
                 <li className="sidebar__navigation-list-item">
                   <a href="#">
-                    <span className="list-black-bar"></span>
-                    <h4 className="list-number">04</h4>
-                    <h4 className="list-text">Contact Me</h4>
+                    <div className="list-number">04</div>
+                    <div className="list-text">Contact Me</div>
                   </a>
                 </li>
             </ul>
