@@ -7,10 +7,10 @@ class Sidebar extends Component {
       <div className="sidebar">
         <div className="sidebar__navigation">
             <ul className="sidebar__navigation-list">
-                <li className="sidebar__navigation-list-item">
+                <li className="sidebar__navigation-list-item active">
                   <a href="#">
                     <div className="list-number">00</div>
-                    <div className="list-text">Vasilios Georgoudis</div>
+                    <div className="list-text active">Vasilios Georgoudis</div>
                   </a>
                 </li>
                 <li className="sidebar__navigation-list-item">

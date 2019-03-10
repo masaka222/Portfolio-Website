@@ -49,6 +49,14 @@
     transition: color .5s cubic-bezier(0,0,0,1);
 }
 
+.list-number{
+    color: white;
+}
+
+.list-text{
+    margin-left: 30px;
+}
+
 /* ---- HOVER ANIMATION ---- */
 
 /* Black Box */
@@ -64,6 +72,7 @@
     transition: all .3s cubic-bezier(0,0,0,.5);
 }
 
+/* WHEN HOVERED */
 /* Cursor on hover */
 .sidebar__navigation-list-item a:hover{
     color: white;
@@ -75,10 +84,15 @@
     width: 100%;
 }
 
-.list-number{
+/* WHEN LINK IS ACTIVE */
+/* Cursor on hover */
+.active{
     color: white;
+    cursor: none;
+    pointer-events: none;
 }
 
-.list-text{
-    margin-left: 30px;
+/* Black Box Animation */
+.active a::before{
+    width: 100%;
 }
