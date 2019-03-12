@@ -1,3 +1,5 @@
+/* .sidebar is the area that whole sidebar cover. It's purpose is
+    so that when we hover on that area, the actual sidebar appears */
 .sidebar, 
 .sidebar__navigation{
     position: absolute;
@@ -13,13 +15,15 @@
     justify-content: center;
 }
 
-
+/* Before hovering we can only see 40px of the navigation bar,
+    that is only the numbers of our links */
 .sidebar__navigation{
     width: 40px;
     background-color: rgba(0,0,0,.06);
     transition: all .3s cubic-bezier(0,0,0,.3);
 }
 
+/* This is the black part of the sidebar*/
 .sidebar__navigation::before{
     content: '';
     position: absolute;
@@ -122,10 +126,13 @@
     transition: all .3s cubic-bezier(0,0,0,.5);
 }
 
+/* We need the black box of each list item to be the same width as the
+    black part of the sidebar */
 .sidebar:hover
 .sidebar__navigation-list-item a::before{
     width: 280px;
 }
+
 
 .sidebar:hover
 .sidebar__navigation-list-item a:hover::before{
