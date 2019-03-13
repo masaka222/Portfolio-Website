@@ -1,0 +1,40 @@
+.header{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.center_navigation{
+    
+}
+
+.logo{
+    align-self: flex-start;
+    background-color: black;
+    width: 12rem;
+    height: 12rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: white;
+    z-index: 2;
+}
+
+.social__linkedin,
+.social__github{
+    width: 2.5rem;
+    height: auto;
+}
