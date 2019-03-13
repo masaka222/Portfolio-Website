@@ -133,12 +133,13 @@
     width: 280px;
 }
 
-
+/* All the black boxes of each list item should expand 100% on hover */
 .sidebar:hover
 .sidebar__navigation-list-item a:hover::before{
     width: 100%;
 }
 
+/* The black box of the active list item should be 100% fixed*/
 .sidebar:hover
 .active a::before{
     width: 100%;
