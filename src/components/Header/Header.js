@@ -7,19 +7,24 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        <div className="logo">
-          <div className="logo__text">
-            <p>Vasilis</p>
-            <p>Georgoudis</p>
+
+        <div className="logo-container">
+          <div className="logo">
+            <div className="logo__text">
+              <p>Vasilis</p>
+              <p>Georgoudis</p>
+            </div>
           </div>
         </div>
+        
         <div className="center_navigation">
-          <a> About </a>
-          <a> Work </a>
+          <a href="#" className="center_navigation__about active"> About </a>
+          <a href="#" className="center_navigation__work"> Work </a>
         </div>
+
         <div className="social">
-          <img src={linkedin} className="social__linkedin"></img>
-          <img src={github} className="social__github"></img>
+          <a href="https://www.linkedin.com/in/vasilis-georgoudis-69211971/" target="_blank"><img src={linkedin} className="social__linkedin"></img></a>
+          <a href="https://github.com/masaka222" target="_blank"> <img src={github} className="social__github"></img></a>
         </div>
       </header>
     );

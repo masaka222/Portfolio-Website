@@ -29,6 +29,10 @@ html{
   font-size: 62.5%; /* So that 1rem = 10px (10px/16px (browsers default) = 62.5% -> 1rem = 10px */
 }
 
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
 .App {
   display: grid;
   grid-template-rows: [header-start] 7.6rem [header-end main-start] calc(100vh - 7.6rem) [main-end];
