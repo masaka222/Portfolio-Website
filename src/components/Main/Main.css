@@ -1,6 +1,6 @@
 .main{
     position: relative;
-    background-color: var(--color-blue-light);
+    /*background-color: var(--color-blue-light);*/
     margin-left: 4rem;
     margin-right: 4rem;
 }

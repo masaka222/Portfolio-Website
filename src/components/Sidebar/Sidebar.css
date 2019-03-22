@@ -97,9 +97,13 @@
 /* WHEN LINK IS ACTIVE */
 /* Cursor on hover */
 .active{
-    color: white;
     cursor: none;
     pointer-events: none;
+}
+
+/* We want only the sidebar items color to be white when active */
+.sidebar__navigation-list-item .active {
+    color: white;
 }
 
 /* Black Box Animation */
