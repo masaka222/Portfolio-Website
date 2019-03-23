@@ -25,7 +25,7 @@ class Main extends Component {
           </Switch>
         </BrowserRouter>
 
-        <Vasilis/>
+        
       </div>
     );
   }
