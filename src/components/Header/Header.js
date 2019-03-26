@@ -18,7 +18,7 @@ class Header extends Component {
         </div>
         
         <div className="center_navigation">
-          <a href="#" className="center_navigation__about active"> About </a>
+          <a href="#" className="center_navigation__about headernav-active"> About </a>
           <a href="#" className="center_navigation__work"> Work </a>
         </div>
 

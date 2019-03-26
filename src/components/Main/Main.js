@@ -13,9 +13,8 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
-        <Sidebar/>
-
         <BrowserRouter>
+          <Sidebar/>
           <Switch>
             <Route exact path="/" component={Vasilis}/>
             <Route path="/bio" component={WhatIdo}/>
@@ -24,8 +23,6 @@ class Main extends Component {
             <Route path="/contact" component={Contact}/>
           </Switch>
         </BrowserRouter>
-
-        
       </div>
     );
   }

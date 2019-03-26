@@ -65,7 +65,7 @@
 
 .center_navigation__about:hover,
 .center_navigation__work:hover,
-.active{
+.headernav-active{
     border-bottom: 3px solid black;
 }
 
