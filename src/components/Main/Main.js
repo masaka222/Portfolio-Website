@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Main.css';
 import Sidebar from '../Sidebar/Sidebar';
 
-import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Vasilis from '../Vasilis/Vasilis';
 import WhatIdo from '../WhatIdo/WhatIdo';
 import HowIdoIt from '../HowIdoIt/HowIdoIt';
