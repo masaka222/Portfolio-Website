@@ -50,22 +50,84 @@ class Sidebar extends Component {
       }
     }
   }
-  /*
+  
+  
   scrollFunction = (event) => {
-    if (event.deltaY < 0) {
-      console.info('scrolled up');
+    if (event.deltaY < -50) {
+      switch(this.props.location.pathname){
+        case '/contact':
+          this.props.history.push('/moreskills');
+          /* I stop the event from happening right after */
+          window.removeEventListener("wheel", this.scrollFunction);
+          /* And resume it after some time */
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.scrollFunction);
+          },700);
+          break;
+        case '/moreskills':
+          this.props.history.push('/skills');
+          window.removeEventListener("wheel", this.scrollFunction);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.scrollFunction);
+          },700);
+          break;
+        case '/skills':
+          this.props.history.push('/bio');
+          window.removeEventListener("wheel", this.scrollFunction);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.scrollFunction);
+          },700);
+          break;
+        case '/bio':
+          this.props.history.push('/');
+          window.removeEventListener("wheel", this.scrollFunction);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.scrollFunction);
+          },700);
+          break;
+      }
       
-    } else {
-      console.info('scrolled down');
+    } else if (event.deltaY > 50){
+      switch(this.props.location.pathname){
+        case '/':
+          this.props.history.push('/bio');
+          window.removeEventListener("wheel", this.scrollFunction);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.scrollFunction);
+          },700);
+          break;
+        case '/bio':
+          this.props.history.push('/skills');
+          window.removeEventListener("wheel", this.scrollFunction);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.scrollFunction);
+          },700);
+          break;
+        case '/skills':
+          this.props.history.push('/moreskills');
+          window.removeEventListener("wheel", this.scrollFunction);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.scrollFunction);
+          },700);
+          break;
+        case '/moreskills':
+          this.props.history.push('/contact');
+          window.removeEventListener("wheel", this.scrollFunction);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.scrollFunction);
+          },700);
+          break;
+      }
     }
-  }*/
+  }
 
 
   render() {
     /* Checks if any key is pressed */
     window.addEventListener("keydown", this.checkKeyPress, false);
     // When the user scrolls down 80px from the top of the document, call the scrollFunction()
-    //window.addEventListener("wheel", this.scrollFunction);
+    //document.getElementById("main").addEventListener("wheel", scrollFunction2);
+    window.addEventListener("wheel", this.scrollFunction);
     
     return (   
       <div className="sidebar">
