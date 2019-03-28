@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withRouter, Redirect } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './Sidebar.css';
 
 class Sidebar extends Component {
@@ -14,36 +14,60 @@ class Sidebar extends Component {
   }
   /* Checks if up or down arrow keys are pressed to navigate with buttons */
   checkKeyPress = (key) => {
+    /* When you press the up arrow key, if for example you are on the /contact page, you're gonna navigate to
+       the moreskills page next */
     if(key.keyCode == '38'){
-      //this.checkTest();
-      this.props.history.push('/');
-      console.log('up was pressed');
+      switch(this.props.location.pathname){
+        case '/contact':
+          this.props.history.push('/moreskills');
+          break;
+        case '/moreskills':
+          this.props.history.push('/skills');
+          break;
+        case '/skills':
+          this.props.history.push('/bio');
+          break;
+        case '/bio':
+          this.props.history.push('/');
+          break;
+      }
     }
+    /* The same for the down arrow key */
     if(key.keyCode == '40'){
-      this.props.history.push('/bio');
-      console.log('down was pressed');
+      switch(this.props.location.pathname){
+        case '/':
+          this.props.history.push('/bio');
+          break;
+        case '/bio':
+          this.props.history.push('/skills');
+          break;
+        case '/skills':
+          this.props.history.push('/moreskills');
+          break;
+        case '/moreskills':
+          this.props.history.push('/contact');
+          break;
+      }
     }
   }
+  /*
+  scrollFunction = (event) => {
+    if (event.deltaY < 0) {
+      console.info('scrolled up');
+      
+    } else {
+      console.info('scrolled down');
+    }
+  }*/
+
 
   render() {
-    /* Checks if up or down arrow keys are pressed to navigate with buttons */
+    /* Checks if any key is pressed */
     window.addEventListener("keydown", this.checkKeyPress, false);
-  /*
-    function checkKeyPress(key) {
-      if(key.keyCode == '38'){
-        //this.location.pathname = '/';
-        //this.transitionTo('/bio');
-        //this.history.push('/contact');
-        console.log('up was pressed');
-      }
-      if(key.keyCode == '40'){
-        this.location.pathname = '/bio';
-        console.log('down was pressed');
-      }
-    }*/
+    // When the user scrolls down 80px from the top of the document, call the scrollFunction()
+    //window.addEventListener("wheel", this.scrollFunction);
     
-    return (
-      
+    return (   
       <div className="sidebar">
         <div className="sidebar__navigation">
             <ul className="sidebar__navigation-list">
@@ -77,14 +101,13 @@ class Sidebar extends Component {
                     <div className = {"list-text "+ this.getActiveClass("/contact")}>Contact Me</div>
                   </Link>
                 </li>
-
-
             </ul>
         </div> 
       </div>
     );
   }
 }
+
 /* In order to have history and location in my component's props */
 Sidebar = withRouter(Sidebar);
 
