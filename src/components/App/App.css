@@ -27,6 +27,9 @@
 html{
   box-sizing: border-box;
   font-size: 62.5%; /* So that 1rem = 10px (10px/16px (browsers default) = 62.5% -> 1rem = 10px */
+  /* These two are used to keep the page in place while scrolling */
+  height: 100%;
+  overflow: hidden;
 }
 
 a, a:visited, a:hover, a:active {
