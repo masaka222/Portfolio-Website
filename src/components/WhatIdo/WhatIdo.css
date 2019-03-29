@@ -2,4 +2,34 @@
     width: 100%;
     height: 100%;
     background-color: var(--color-yellow-light);
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    justify-items: center;
+    align-items: center;
+}
+
+/* Picture */
+.what-I-do__picture{
+    width: 85%;
+    max-width: 600px;
+    height: auto;
+    margin: 2rem;
+}
+
+/* Text */
+.what-I-do__text{
+    margin: 2rem;
+}
+
+.what-I-do__text-small-title{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.what-I-do__text-paragraph{
+    color: white;
+    margin-top: 4rem;
+    font-size: 1.5rem;
 }

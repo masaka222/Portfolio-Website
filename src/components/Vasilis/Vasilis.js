@@ -6,7 +6,7 @@ class Vasilis extends Component {
   render() {
     return (
       <div className="vasilis">
-        <img src={profilePicture} className="main__picture"></img>
+        <img src={profilePicture} className="vasilis__picture"></img>
       </div>
     );
   }

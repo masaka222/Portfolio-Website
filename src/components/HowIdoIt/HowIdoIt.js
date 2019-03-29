@@ -6,7 +6,7 @@ class HowIdoIt extends Component {
   render() {
     return (
       <div className="how-I-do-it">
-        <img src={profilePicture} className="main__picture"></img>
+        
       </div>
     );
   }
