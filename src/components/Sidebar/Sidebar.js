@@ -12,109 +12,74 @@ class Sidebar extends Component {
   checkTest = () => {
     this.props.location.pathname = '/bio';
   }
-  /* Checks if up or down arrow keys are pressed to navigate with buttons */
+  /* Checks if up or down arrow keys are pressed to navigate with buttons OR
+      if you scroll to navigate with scrolling */
   checkKeyPress = (key) => {
-    /* When you press the up arrow key, if for example you are on the /contact page, you're gonna navigate to
-       the moreskills page next */
-    if(key.keyCode == '38'){
+    /* When you press the up arrow key OR scroll down, if for example you are on the /contact page, you're gonna navigate to
+       the moreskills page next. */
+    if(key.keyCode == '38' || key.deltaY < -50){
       switch(this.props.location.pathname){
         case '/contact':
           this.props.history.push('/moreskills');
+          /* I stop the scroll event from happening right after */
+          window.removeEventListener("wheel", this.checkKeyPress);
+          /* And resume it after some time */
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.checkKeyPress);
+          },700);
           break;
         case '/moreskills':
           this.props.history.push('/skills');
+          window.removeEventListener("wheel", this.checkKeyPress);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.checkKeyPress);
+          },700);
           break;
         case '/skills':
           this.props.history.push('/bio');
+          window.removeEventListener("wheel", this.checkKeyPress);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.checkKeyPress);
+          },700);
           break;
         case '/bio':
           this.props.history.push('/');
+          window.removeEventListener("wheel", this.checkKeyPress);
+          setTimeout(()=>{
+            window.addEventListener("wheel", this.checkKeyPress);
+          },700);
           break;
       }
     }
     /* The same for the down arrow key */
-    if(key.keyCode == '40'){
+    if(key.keyCode == '40' || key.deltaY > 50){
       switch(this.props.location.pathname){
         case '/':
           this.props.history.push('/bio');
-          break;
-        case '/bio':
-          this.props.history.push('/skills');
-          break;
-        case '/skills':
-          this.props.history.push('/moreskills');
-          break;
-        case '/moreskills':
-          this.props.history.push('/contact');
-          break;
-      }
-    }
-  }
-  
-  
-  scrollFunction = (event) => {
-    if (event.deltaY < -50) {
-      switch(this.props.location.pathname){
-        case '/contact':
-          this.props.history.push('/moreskills');
-          /* I stop the event from happening right after */
-          window.removeEventListener("wheel", this.scrollFunction);
-          /* And resume it after some time */
+          window.removeEventListener("wheel", this.checkKeyPress);
           setTimeout(()=>{
-            window.addEventListener("wheel", this.scrollFunction);
-          },700);
-          break;
-        case '/moreskills':
-          this.props.history.push('/skills');
-          window.removeEventListener("wheel", this.scrollFunction);
-          setTimeout(()=>{
-            window.addEventListener("wheel", this.scrollFunction);
-          },700);
-          break;
-        case '/skills':
-          this.props.history.push('/bio');
-          window.removeEventListener("wheel", this.scrollFunction);
-          setTimeout(()=>{
-            window.addEventListener("wheel", this.scrollFunction);
-          },700);
-          break;
-        case '/bio':
-          this.props.history.push('/');
-          window.removeEventListener("wheel", this.scrollFunction);
-          setTimeout(()=>{
-            window.addEventListener("wheel", this.scrollFunction);
-          },700);
-          break;
-      }
-      
-    } else if (event.deltaY > 50){
-      switch(this.props.location.pathname){
-        case '/':
-          this.props.history.push('/bio');
-          window.removeEventListener("wheel", this.scrollFunction);
-          setTimeout(()=>{
-            window.addEventListener("wheel", this.scrollFunction);
+            window.addEventListener("wheel", this.checkKeyPress);
           },700);
           break;
         case '/bio':
           this.props.history.push('/skills');
-          window.removeEventListener("wheel", this.scrollFunction);
+          window.removeEventListener("wheel", this.checkKeyPress);
           setTimeout(()=>{
-            window.addEventListener("wheel", this.scrollFunction);
+            window.addEventListener("wheel", this.checkKeyPress);
           },700);
           break;
         case '/skills':
           this.props.history.push('/moreskills');
-          window.removeEventListener("wheel", this.scrollFunction);
+          window.removeEventListener("wheel", this.checkKeyPress);
           setTimeout(()=>{
-            window.addEventListener("wheel", this.scrollFunction);
+            window.addEventListener("wheel", this.checkKeyPress);
           },700);
           break;
         case '/moreskills':
           this.props.history.push('/contact');
-          window.removeEventListener("wheel", this.scrollFunction);
+          window.removeEventListener("wheel", this.checkKeyPress);
           setTimeout(()=>{
-            window.addEventListener("wheel", this.scrollFunction);
+            window.addEventListener("wheel", this.checkKeyPress);
           },700);
           break;
       }
@@ -127,7 +92,7 @@ class Sidebar extends Component {
     window.addEventListener("keydown", this.checkKeyPress, false);
     // When the user scrolls down 80px from the top of the document, call the scrollFunction()
     //document.getElementById("main").addEventListener("wheel", scrollFunction2);
-    window.addEventListener("wheel", this.scrollFunction);
+    window.addEventListener("wheel", this.checkKeyPress);
     
     return (   
       <div className="sidebar">

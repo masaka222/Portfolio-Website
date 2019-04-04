@@ -88,6 +88,7 @@ class Main extends Component {
                 props => <About 
                           smallTitle  = {contactPageSmallTitle}
                           bigTitle1   = {contactPageBigTitle1}
+                          bigTitle2   = {contactPageBigTitle2}
                           paragraph   = {contactPageParagraph}
                           color       = {contactBackgroundColor}
                           picture     = {laptopPicture}
