@@ -10,6 +10,11 @@ import auebPicture from './aueb.png';
 import logosPicture from './logos.png';
 import laptopPicture from './laptop.png';
 
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
+
 class Main extends Component {
   render() {
 
@@ -45,56 +50,66 @@ class Main extends Component {
       <div className="main">
         <BrowserRouter>
           <Sidebar/>
-          <Switch>
-            <Route exact path="/" component={Vasilis}/>
-            <Route 
-              path="/bio" 
-              component={ 
-                props => <About 
-                          smallTitle  = {bioPageSmallTitle}
-                          bigTitle1   = {bioPageBigTitle1}
-                          bigTitle2   = {bioPageBigTitle2}
-                          paragraph   = {bioPageParagraph}
-                          color       = {bioBackgroundColor}
-                          picture     = {auebPicture}
-                        />
-              }/>
-            <Route 
-              path="/skills"
-              component={ 
-                props => <About 
-                          smallTitle  = {skillsPageSmallTitle}
-                          bigTitle1   = {skillsPageBigTitle1}
-                          bigTitle2   = {skillsPageBigTitle2}
-                          paragraph   = {skillsPageParagraph}
-                          color       = {skillsBackgroundColor}
-                          picture     = {logosPicture}
-                        />
-              }/>
-            <Route 
-              path="/moreskills" 
-              component={ 
-                props => <About 
-                          smallTitle  = {moreSkillsPageSmallTitle}
-                          bigTitle1   = {moreSkillsPageBigTitle1}
-                          paragraph   = {moreSkillsPageParagraph}
-                          color       = {moreSkillsBackgroundColor}
-                          picture     = {laptopPicture}
-                        />
-              }/>
-            <Route 
-              path="/contact" 
-              component={ 
-                props => <About 
-                          smallTitle  = {contactPageSmallTitle}
-                          bigTitle1   = {contactPageBigTitle1}
-                          bigTitle2   = {contactPageBigTitle2}
-                          paragraph   = {contactPageParagraph}
-                          color       = {contactBackgroundColor}
-                          picture     = {laptopPicture}
-                        />
-              }/>
-          </Switch>
+          <Route render={({location})=>(
+            <TransitionGroup component={null}>
+              <CSSTransition
+                  key = {location.key}
+                  timeout={500}
+                  classNames="fade"
+              >
+                <Switch location = {location}>
+                  <Route exact path="/" component={Vasilis}/>
+                  <Route 
+                    path="/bio" 
+                    component={ 
+                      props => <About 
+                                smallTitle  = {bioPageSmallTitle}
+                                bigTitle1   = {bioPageBigTitle1}
+                                bigTitle2   = {bioPageBigTitle2}
+                                paragraph   = {bioPageParagraph}
+                                color       = {bioBackgroundColor}
+                                picture     = {auebPicture}
+                              />
+                    }/>
+                  <Route 
+                    path="/skills"
+                    component={ 
+                      props => <About 
+                                smallTitle  = {skillsPageSmallTitle}
+                                bigTitle1   = {skillsPageBigTitle1}
+                                bigTitle2   = {skillsPageBigTitle2}
+                                paragraph   = {skillsPageParagraph}
+                                color       = {skillsBackgroundColor}
+                                picture     = {logosPicture}
+                              />
+                    }/>
+                  <Route 
+                    path="/moreskills" 
+                    component={ 
+                      props => <About 
+                                smallTitle  = {moreSkillsPageSmallTitle}
+                                bigTitle1   = {moreSkillsPageBigTitle1}
+                                paragraph   = {moreSkillsPageParagraph}
+                                color       = {moreSkillsBackgroundColor}
+                                picture     = {laptopPicture}
+                              />
+                    }/>
+                  <Route 
+                    path="/contact" 
+                    component={ 
+                      props => <About 
+                                smallTitle  = {contactPageSmallTitle}
+                                bigTitle1   = {contactPageBigTitle1}
+                                bigTitle2   = {contactPageBigTitle2}
+                                paragraph   = {contactPageParagraph}
+                                color       = {contactBackgroundColor}
+                                picture     = {laptopPicture}
+                              />
+                    }/>
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )}/>
         </BrowserRouter>
       </div>
     );
