@@ -33,3 +33,20 @@
     margin-top: 4rem;
     font-size: 1.5rem;
 }
+
+/* MOVE ANIMATION */
+/* appear - on page load*/
+.move-appear {
+    transform: translateY(10rem);
+}
+
+.move-appear-active{
+    transform: translateY(0rem);
+    transition: transform 400ms ease-in;
+}
+
+
+.move-exit-done {
+    transform: translateY(-10rem);
+    transition: transform 500ms ease-in;
+}

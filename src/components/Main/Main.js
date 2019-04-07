@@ -69,6 +69,7 @@ class Main extends Component {
                                 paragraph   = {bioPageParagraph}
                                 color       = {bioBackgroundColor}
                                 picture     = {auebPicture}
+                                location = {location}
                               />
                     }/>
                   <Route 
@@ -81,6 +82,7 @@ class Main extends Component {
                                 paragraph   = {skillsPageParagraph}
                                 color       = {skillsBackgroundColor}
                                 picture     = {logosPicture}
+                                location = {location}
                               />
                     }/>
                   <Route 
@@ -92,6 +94,7 @@ class Main extends Component {
                                 paragraph   = {moreSkillsPageParagraph}
                                 color       = {moreSkillsBackgroundColor}
                                 picture     = {laptopPicture}
+                                location = {location}
                               />
                     }/>
                   <Route 
@@ -104,6 +107,7 @@ class Main extends Component {
                                 paragraph   = {contactPageParagraph}
                                 color       = {contactBackgroundColor}
                                 picture     = {laptopPicture}
+                                location = {location}
                               />
                     }/>
                 </Switch>
