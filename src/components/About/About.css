@@ -37,7 +37,7 @@
 /* MOVE ANIMATION */
 /* appear - on page load*/
 .move-appear {
-    transform: translateY(10rem);
+    transform: translateY(3rem);
 }
 
 .move-appear-active{
@@ -45,8 +45,18 @@
     transition: transform 400ms ease-in;
 }
 
+.move-enter {
+    transform: translateY(3rem);
+}
+.move-enter-active {
+    transform: translateY(0rem);
+    transition: transform 400ms ease-in;
+}
+.move-exit {
+    transform: translateY(0rem);;
 
-.move-exit-done {
-    transform: translateY(-10rem);
-    transition: transform 500ms ease-in;
+}
+.move-exit-active {
+    transform: translateY(-3rem);
+    transition: transform 400ms ease-in;
 }
