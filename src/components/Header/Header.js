@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {NavLink} from 'react-router-dom';
 import './Header.css';
 import linkedin from './linkedin-logo.png';
 import github from './github-logo.png';
@@ -18,8 +19,8 @@ class Header extends Component {
         </div>
         
         <div className="center_navigation">
-          <a href="#" className="center_navigation__about headernav-active"> About </a>
-          <a href="#" className="center_navigation__work"> Work </a>
+          <NavLink exact to='/' activeClassName='headernav-active' className = 'center_navigation__about'> About </NavLink>
+          <NavLink to='/work' activeClassName='headernav-active' className = 'center_navigation__work'> Work </NavLink>
         </div>
 
         <div className="social">
