@@ -3,9 +3,10 @@ import '../Main/Main.css';
 import Sidebar from '../Sidebar/Sidebar';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Vasilis from '../Vasilis/Vasilis';
-import About from '../About/About';
+import Portfolio from '../Portfolio/Portfolio';
 import Work from '../Work/Work';
+
+import bullseye from './bullseye@0,1x.png';
 
 import {
   CSSTransition,
@@ -17,11 +18,10 @@ class Main2 extends Component {
 
     /* Bio Page -- Variables */
     const bioPageLink = '/work/bio'
-    const bioPageSmallTitle = 'What I do';
-    const bioPageBigTitle1 = 'Hi, My name is Vasilis Georgoudis,';
-    const bioPageBigTitle2 = 'and I’m a Web Developer based in Greece.';
+    const bioPageBigTitle1 = 'Bullseye Burger House';
+    const bioPageBigTitle2 = 'Website';
     const bioPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
-    const bioBackgroundColor = 'var(--color-yellow-light)';
+    const bioBackgroundColor = 'var(--color-red-light)';
 
     /* Skills Page -- Variables */
     const skillsPageLink = '/work/skills'
@@ -52,15 +52,15 @@ class Main2 extends Component {
         <BrowserRouter>
           <Sidebar
             link00 = '/work'
-            title00 = 'Vasilis'
+            title00 = 'Portfolio'
             link01 = {bioPageLink}
-            title01 = 'What'
+            title01 = 'Bullseye Burger House'
             link02 = {skillsPageLink}
-            title02 = 'How'
+            title02 = 'DM Studio Animation'
             link03 = {moreSkillsPageLink}
-            title03 = 'More'
+            title03 = 'Snowhunt Transition'
             link04 = {contactPageLink}
-            title04 = 'Contact'
+            title04 = 'Area2071 Parallax Effect'
           />
           <Route render={({location})=>(
             <TransitionGroup component={null}>
@@ -70,24 +70,24 @@ class Main2 extends Component {
                   classNames="fade"
               >
                 <Switch location = {location}>
-                  <Route exact path="/work" component={Vasilis}/>
+                  <Route exact path="/work" component={Portfolio}/>
                   <Route 
                     path="/work/bio" 
                     component={ 
-                      props => <About 
-                                smallTitle  = {bioPageSmallTitle}
+                      props => <Work 
+                                
                                 bigTitle1   = {bioPageBigTitle1}
                                 bigTitle2   = {bioPageBigTitle2}
                                 paragraph   = {bioPageParagraph}
-                                color       = 'red'
-                               
+                                color       = {bioBackgroundColor}
+                                picture     = {bullseye}
                                 location    = {location}
                               />
                     }/>
                   <Route 
                     path="/work/skills"
                     component={ 
-                      props => <About 
+                      props => <Work 
                                 smallTitle  = {skillsPageSmallTitle}
                                 bigTitle1   = {skillsPageBigTitle1}
                                 bigTitle2   = {skillsPageBigTitle2}
@@ -100,7 +100,7 @@ class Main2 extends Component {
                   <Route 
                     path="/work/moreskills" 
                     component={ 
-                      props => <About 
+                      props => <Work 
                                 smallTitle  = {moreSkillsPageSmallTitle}
                                 bigTitle1   = {moreSkillsPageBigTitle1}
                                 paragraph   = {moreSkillsPageParagraph}
@@ -112,7 +112,7 @@ class Main2 extends Component {
                   <Route 
                     path="/work/contact" 
                     component={ 
-                      props => <About 
+                      props => <Work 
                                 smallTitle  = {contactPageSmallTitle}
                                 bigTitle1   = {contactPageBigTitle1}
                                 bigTitle2   = {contactPageBigTitle2}
