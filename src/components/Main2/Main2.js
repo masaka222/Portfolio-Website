@@ -16,12 +16,14 @@ import {
 class Main2 extends Component {
   render() {
 
-    /* Bio Page -- Variables */
-    const bioPageLink = '/work/bio'
-    const bioPageBigTitle1 = 'Bullseye Burger House';
-    const bioPageBigTitle2 = 'Website';
-    const bioPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
-    const bioBackgroundColor = 'var(--color-red-light)';
+    /* Bullseye Page -- Variables */
+    const bullseyeLink = '/work/bullseye'
+    const bullseyeTitle1 = 'Bullseye Burger House';
+    const bullseyeTitle2 = 'Website';
+    const bullseyeParagraph = 'The website is built using the ReactJS library. It is responsive for every screen size, every browser and different resolution screens.';
+    const bullseyeBackgroundColor = 'var(--color-coral-light)';
+    const bullseyeWeblink = 'https://www.bullseyeburgerhouse.com';
+    const bullseyeGithub = 'https://github.com/masaka222/bullseye-website';
 
     /* Skills Page -- Variables */
     const skillsPageLink = '/work/skills'
@@ -53,7 +55,7 @@ class Main2 extends Component {
           <Sidebar
             link00 = '/work'
             title00 = 'Portfolio'
-            link01 = {bioPageLink}
+            link01 = {bullseyeLink}
             title01 = 'Bullseye Burger House'
             link02 = {skillsPageLink}
             title02 = 'DM Studio Animation'
@@ -72,16 +74,17 @@ class Main2 extends Component {
                 <Switch location = {location}>
                   <Route exact path="/work" component={Portfolio}/>
                   <Route 
-                    path="/work/bio" 
+                    path="/work/bullseye" 
                     component={ 
                       props => <Work 
-                                
-                                bigTitle1   = {bioPageBigTitle1}
-                                bigTitle2   = {bioPageBigTitle2}
-                                paragraph   = {bioPageParagraph}
-                                color       = {bioBackgroundColor}
+                                Title1      = {bullseyeTitle1}
+                                Title2      = {bullseyeTitle2}
+                                paragraph   = {bullseyeParagraph}
+                                color       = {bullseyeBackgroundColor}
                                 picture     = {bullseye}
                                 location    = {location}
+                                weblink     = {bullseyeWeblink}
+                                github      = {bullseyeGithub}
                               />
                     }/>
                   <Route 
