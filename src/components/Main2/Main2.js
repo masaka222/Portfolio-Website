@@ -7,6 +7,9 @@ import Portfolio from '../Portfolio/Portfolio';
 import Work from '../Work/Work';
 
 import bullseye from './bullseye@0,1x.png';
+import mountains from './mountains.png';
+import camera from './camera2.png';
+import area from './area-white.png';
 
 import {
   CSSTransition,
@@ -21,32 +24,36 @@ class Main2 extends Component {
     const bullseyeTitle1 = 'Bullseye Burger House';
     const bullseyeTitle2 = 'Website';
     const bullseyeParagraph = 'The website is built using the ReactJS library. It is responsive for every screen size, every browser and different resolution screens.';
-    const bullseyeBackgroundColor = 'var(--color-coral-light)';
+    const bullseyeBackgroundColor = 'var(--color-red-light)';
     const bullseyeWeblink = 'https://www.bullseyeburgerhouse.com';
     const bullseyeGithub = 'https://github.com/masaka222/bullseye-website';
 
-    /* Skills Page -- Variables */
-    const skillsPageLink = '/work/skills'
-    const skillsPageSmallTitle = 'How I do it';
-    const skillsPageBigTitle1 = 'I always try to use all the latest technologies';
-    const skillsPageBigTitle2 = 'to stay relevant in the field of Web Development.';
-    const skillsPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
-    const skillsBackgroundColor = 'var(--color-mint-light)';
+    /* DM Studio Page -- Variables */
+    const DMstudioLink = '/work/dmstudio'
+    const DMstudioTitle1 = 'D. M. - Studio';
+    const DMstudioTitle2 = 'Animation';
+    const DMstudioParagraph = 'This is a website concept with an Opening Menu Animation. It is built using the ReactJS library, CSS Grid and Flexbox';
+    const DMstudioBackgroundColor = 'var(--color-mint-light)';
+    const DMstudioWeblink = 'https://masaka222.github.io/D.-M.-Studio-animation/';
+    const DMstudioGithub = 'https://github.com/masaka222/D.-M.-Studio-animation';
 
-    /* More Skills Page -- Variables */
-    const moreSkillsPageLink = '/work/moreSkills'
-    const moreSkillsPageSmallTitle = 'More Skills';
-    const moreSkillsPageBigTitle1 = 'I do more than just Web.';
-    const moreSkillsPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
-    const moreSkillsBackgroundColor = 'var(--color-red-light)';
+    /* Snowhunt Page -- Variables */
+    const snowhuntLink = '/work/snowhunt'
+    const snowhuntTitle1 = 'Snowhunt';
+    const snowhuntTitle2 = 'Page Transition';
+    const snowhuntParagraph = 'This is a website concept with an Inner Page Transition. It is built using the ReactJS library, CSS Grid and Flexbox';
+    const snowhuntBackgroundColor = 'var(--color-blue-light)';
+    const snowhuntWeblink = 'https://masaka222.github.io/snowhunt-project/';
+    const snowhuntGithub = 'https://github.com/masaka222/snowhunt-project';
 
-    /* Contact Page -- Variables */
-    const contactPageLink = '/work/contact'
-    const contactPageSmallTitle = 'Contact Me';
-    const contactPageBigTitle1 = 'My mom is proud of my work';
-    const contactPageBigTitle2 = 'You will be too!';
-    const contactPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
-    const contactBackgroundColor = 'var(--color-purple-light)';
+    /* Area2071 Page -- Variables */
+    const area2071Link = '/work/area2071'
+    const area2071Title1 = 'Area 2071';
+    const area2071Title2 = 'Landing Page';
+    const area2071Paragraph = 'This is a landing page concept with a Parallax Effect. It is built using the ReactJS library, CSS Grid and Flexbox';
+    const area2071BackgroundColor = 'var(--color-purple-light)';
+    const area2071Weblink = 'https://masaka222.github.io/Area2071/';
+    const area2071Github = 'https://github.com/masaka222/Area2071';
 
 
     return (
@@ -57,11 +64,11 @@ class Main2 extends Component {
             title00 = 'Portfolio'
             link01 = {bullseyeLink}
             title01 = 'Bullseye Burger House'
-            link02 = {skillsPageLink}
+            link02 = {DMstudioLink}
             title02 = 'DM Studio Animation'
-            link03 = {moreSkillsPageLink}
+            link03 = {snowhuntLink}
             title03 = 'Snowhunt Transition'
-            link04 = {contactPageLink}
+            link04 = {area2071Link}
             title04 = 'Area2071 Parallax Effect'
           />
           <Route render={({location})=>(
@@ -88,41 +95,45 @@ class Main2 extends Component {
                               />
                     }/>
                   <Route 
-                    path="/work/skills"
+                    path="/work/dmstudio"
                     component={ 
                       props => <Work 
-                                smallTitle  = {skillsPageSmallTitle}
-                                bigTitle1   = {skillsPageBigTitle1}
-                                bigTitle2   = {skillsPageBigTitle2}
-                                paragraph   = {skillsPageParagraph}
-                                color       = {skillsBackgroundColor}
-                                
-                                location = {location}
+                                Title1      = {DMstudioTitle1}
+                                Title2      = {DMstudioTitle2}
+                                paragraph   = {DMstudioParagraph}
+                                color       = {DMstudioBackgroundColor}
+                                picture     = {camera}
+                                location    = {location}
+                                weblink     = {DMstudioWeblink}
+                                github      = {DMstudioGithub}
                               />
                     }/>
                   <Route 
-                    path="/work/moreskills" 
+                    path="/work/snowhunt" 
                     component={ 
                       props => <Work 
-                                smallTitle  = {moreSkillsPageSmallTitle}
-                                bigTitle1   = {moreSkillsPageBigTitle1}
-                                paragraph   = {moreSkillsPageParagraph}
-                                color       = {moreSkillsBackgroundColor}
-                                
-                                location = {location}
+                                Title1      = {snowhuntTitle1}
+                                Title2      = {snowhuntTitle2}
+                                paragraph   = {snowhuntParagraph}
+                                color       = {snowhuntBackgroundColor}
+                                picture     = {mountains}
+                                location    = {location}
+                                weblink     = {snowhuntWeblink}
+                                github      = {snowhuntGithub}
                               />
                     }/>
                   <Route 
-                    path="/work/contact" 
+                    path="/work/area2071" 
                     component={ 
                       props => <Work 
-                                smallTitle  = {contactPageSmallTitle}
-                                bigTitle1   = {contactPageBigTitle1}
-                                bigTitle2   = {contactPageBigTitle2}
-                                paragraph   = {contactPageParagraph}
-                                color       = {contactBackgroundColor}
-                                
-                                location = {location}
+                                Title1      = {area2071Title1}
+                                Title2      = {area2071Title2}
+                                paragraph   = {area2071Paragraph}
+                                color       = {area2071BackgroundColor}
+                                picture     = {area}
+                                location    = {location}
+                                weblink     = {area2071Weblink}
+                                github      = {area2071Github}
                               />
                     }/>
                 </Switch>
