@@ -4,6 +4,39 @@
     margin-right: 4rem;
 }
 
+/* black box that expands when pressing Work on header. At first it's hidden (width: 0px)*/
+.main::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    left: 100vw;
+    background-color: #000;
+    z-index: 1; 
+}
+
+.main:hover::after{
+    animation: expand 1.4s cubic-bezier(.36,.03,.98,-0.08) 0s;
+    /*width: 100%;
+    transition: width 700ms cubic-bezier(.36,.03,.98,-0.08);*/
+}
+
+@keyframes expand{
+    0%{
+        right: 0;
+        left: 100vw;
+    }
+    50%{
+        right: 0;
+        left: 0vw;
+    }
+    100%{
+        right: 100vw;
+        left: 0vw;
+    }
+}
+
 /* Fade animation */
 .fade-enter {
     opacity: 0;

@@ -57,7 +57,7 @@ class Main2 extends Component {
 
 
     return (
-      <div className="main">
+      <div className="main mainBlackbox">
         <BrowserRouter>
           <Sidebar
             link00 = '/work'
