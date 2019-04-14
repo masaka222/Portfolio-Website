@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
 import './Header.css';
 import linkedin from './linkedin-logo.png';
 import github from './github-logo.png';
 
 class Header extends Component {
+
+  animateAbout = (e) =>{
+    //To delay the page change until the blackbox animation is done
+    e.preventDefault();
+      setTimeout(() => {
+      this.props.history.push('/work')
+    },700)
+    document.getElementById('main').classList.add('animateBlackBox-rightToleft');
+    setTimeout(function() {
+      document.getElementById('main2').classList.add('animateBlackBox-leftToright')
+    },700)
+  }
+
   render() {
     return (
       <header className="header">
-
         <div className="logo-container">
           <div className="logo">
             <div className="logo__text">
@@ -20,7 +32,7 @@ class Header extends Component {
         
         <div className="center_navigation">
           <NavLink exact to='/' activeClassName='headernav-active' className = 'center_navigation__about'> About </NavLink>
-          <NavLink to='/work' activeClassName='headernav-active' className = 'center_navigation__work'> Work </NavLink>
+          <NavLink to='/work' activeClassName='headernav-active' className = 'center_navigation__work' onClick={this.animateAbout}> Work </NavLink>
         </div>
 
         <div className="social">
@@ -31,5 +43,7 @@ class Header extends Component {
     );
   }
 }
+
+Header = withRouter(Header);
 
 export default Header;

@@ -22,12 +22,27 @@
     transition: width 700ms cubic-bezier(.36,.03,.98,-0.08);*/
 }
 
-@keyframes expand{
+.animateBlackBox-rightToleft::after{
+    animation: rigthToleft .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
+}
+
+.animateBlackBox-leftToright::after{
+    animation: leftToright .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
+}
+
+@keyframes rigthToleft {
     0%{
         right: 0;
         left: 100vw;
     }
-    50%{
+    100%{
+        right: 0;
+        left: 0vw;
+    }
+}
+
+@keyframes leftToright{
+    0%{
         right: 0;
         left: 0vw;
     }
@@ -36,6 +51,7 @@
         left: 0vw;
     }
 }
+
 
 /* Fade animation */
 .fade-enter {
