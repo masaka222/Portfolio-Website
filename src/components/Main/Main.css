@@ -16,21 +16,23 @@
     z-index: 1; 
 }
 
-.main:hover::after{
-    animation: expand 1.4s cubic-bezier(.36,.03,.98,-0.08) 0s;
-    /*width: 100%;
-    transition: width 700ms cubic-bezier(.36,.03,.98,-0.08);*/
+.animateMain1-1::after{
+    animation: main1-1 .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
 }
 
-.animateBlackBox-rightToleft::after{
-    animation: rigthToleft .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
+.animateMain1-2::after{
+    animation: main1-2 .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
 }
 
-.animateBlackBox-leftToright::after{
-    animation: leftToright .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
+.animateMain2-1::after{
+    animation: main2-1 .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
 }
 
-@keyframes rigthToleft {
+.animateMain2-2::after{
+    animation: main2-2 .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
+}
+
+@keyframes main1-1 {
     0%{
         right: 0;
         left: 100vw;
@@ -41,7 +43,7 @@
     }
 }
 
-@keyframes leftToright{
+@keyframes main1-2{
     0%{
         right: 0;
         left: 0vw;
@@ -52,6 +54,27 @@
     }
 }
 
+@keyframes main2-1{
+    0%{
+        right: 100vw;
+        left: 0;
+    }
+    100%{
+        right: 0;
+        left: 0;
+    }
+}
+
+@keyframes main2-2{
+    0%{
+        right: 0;
+        left: 0;
+    }
+    100%{
+        right: 0;
+        left: 100vw;
+    }
+}
 
 /* Fade animation */
 .fade-enter {

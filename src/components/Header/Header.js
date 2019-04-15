@@ -6,16 +6,42 @@ import github from './github-logo.png';
 
 class Header extends Component {
 
-  animateAbout = (e) =>{
+  animateWork = (e) =>{
     //To delay the page change until the blackbox animation is done
     e.preventDefault();
       setTimeout(() => {
       this.props.history.push('/work')
     },700)
-    document.getElementById('main').classList.add('animateBlackBox-rightToleft');
+
+    //add the animation classes to my components
+    document.getElementById('main').classList.add('animateMain1-1');
     setTimeout(function() {
-      document.getElementById('main2').classList.add('animateBlackBox-leftToright')
+      document.getElementById('main2').classList.add('animateMain1-2')
     },700)
+    
+    //now I need to remove the animation class from main2 (the component that I'm in at the moment)
+    setTimeout(function() {
+      document.getElementById('main2').classList.remove('animateMain1-2');
+    },1400)
+  }
+
+  animateAbout = (e) =>{
+    //To delay the page change until the blackbox animation is done
+    e.preventDefault();
+      setTimeout(() => {
+      this.props.history.push('/')
+    },700)
+
+    //add the animation classes to my components
+    document.getElementById('main2').classList.add('animateMain2-1');
+    setTimeout(function() {
+      document.getElementById('main').classList.add('animateMain2-2')
+    },700)
+    
+    //now I need to remove the animation class from main (the component that I'm in at the moment)
+    setTimeout(function() {
+      document.getElementById('main').classList.remove('animateMain2-2');
+    },1400)
   }
 
   render() {
@@ -31,8 +57,8 @@ class Header extends Component {
         </div>
         
         <div className="center_navigation">
-          <NavLink exact to='/' activeClassName='headernav-active' className = 'center_navigation__about'> About </NavLink>
-          <NavLink to='/work' activeClassName='headernav-active' className = 'center_navigation__work' onClick={this.animateAbout}> Work </NavLink>
+          <NavLink exact to='/' activeClassName='headernav-active' className = 'center_navigation__about' onClick={this.animateAbout}> About </NavLink>
+          <NavLink to='/work' activeClassName='headernav-active' className = 'center_navigation__work' onClick={this.animateWork}> Work </NavLink>
         </div>
 
         <div className="social">
