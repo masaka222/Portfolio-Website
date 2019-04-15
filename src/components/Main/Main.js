@@ -9,6 +9,7 @@ import About from '../About/About';
 import auebPicture from './aueb.png';
 import logosPicture from './logos.png';
 import laptopPicture from './laptop.png';
+import arrows from './arrows-lite.gif';
 
 import {
   CSSTransition,

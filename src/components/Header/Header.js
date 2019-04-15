@@ -13,6 +13,10 @@ class Header extends Component {
       this.props.history.push('/work')
     },700)
 
+    //make the arrows gif appear
+    //document.getElementById('arrowGif').style.display="block";
+    //document.getElementById('arrowGif').classList.add('mainGif__animation');
+    
     //add the animation classes to my components
     document.getElementById('main').classList.add('animateMain1-1');
     setTimeout(function() {

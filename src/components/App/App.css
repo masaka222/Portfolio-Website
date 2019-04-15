@@ -53,6 +53,23 @@ a, a:visited, a:hover, a:active {
   grid-template-rows: [header-start] 7.6rem [header-end main-start] calc(100vh - 7.6rem) [main-end];
 }
 
+/* Fade animation */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
 @media only screen and (max-width: 768px){
   .App {
     grid-template-rows: [header-start] 5rem [header-end main-start] calc(100vh - 5rem) [main-end];

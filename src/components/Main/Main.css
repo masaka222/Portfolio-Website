@@ -16,6 +16,21 @@
     z-index: 1; 
 }
 
+.mainGif{     
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width:100%;
+    width: auto;
+    z-index: 2;
+    
+    opacity: 0;
+}
+
+.mainGif__animation{
+    animation: gifAnimation .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
+}
+
 .animateMain1-1::after{
     animation: main1-1 .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
 }
@@ -73,6 +88,21 @@
     100%{
         right: 0;
         left: 100vw;
+    }
+}
+
+@keyframes gifAnimation {
+    0%{
+        
+        opacity: 0;
+    }
+    30%{
+        
+        opacity: 1;
+    }
+    100%{
+        
+        opacity: 0;
     }
 }
 
