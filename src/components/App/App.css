@@ -75,3 +75,31 @@ a, a:visited, a:hover, a:active {
     grid-template-rows: [header-start] 5rem [header-end main-start] calc(100vh - 5rem) [main-end];
   }
 }
+/*
+.appGif{
+  position: absolute;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%;
+  margin: auto;
+  z-index: 3;
+  opacity: 0;
+  
+}
+
+.appGif__animation{
+  animation: gifAnimation 1.4s cubic-bezier(.36,.03,.98,-0.08) 0s;
+}
+
+@keyframes gifAnimation {
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{    
+      opacity: 0;
+  }
+}*/
