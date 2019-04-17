@@ -85,6 +85,12 @@
 .social__github{
     width: 2.1rem;
     height: auto;
+    transition: opacity .2s ease-out;
+}
+
+.social__linkedin:hover,
+.social__github:hover{
+    opacity: 0.4;
 }
 
 .social__linkedin{
