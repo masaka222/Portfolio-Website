@@ -100,3 +100,52 @@
 .social__github{
     margin-right: 2rem;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px){
+    .social__linkedin{
+        margin-right: 3rem;
+    }
+    
+    .social__github{
+        margin-right: 2rem;
+    }
+    
+    .logo{
+        margin-left: 5rem;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .logo__text{
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+    .social__linkedin,
+    .social__github{
+        width: 1.6rem;
+        height: auto;
+        transition: opacity .2s ease-out;
+    }
+
+    .social__linkedin{
+        margin-right: 2rem;
+    }
+    
+    .social__github{
+        margin-right: 1.7rem;
+    }
+    
+    .logo{
+        margin-left: 1rem;
+    }
+
+
+    .center_navigation{
+        font-size: 1.1rem; 
+    }
+}
