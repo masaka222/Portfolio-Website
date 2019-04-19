@@ -21,31 +21,28 @@ class Main extends Component {
     /* Bio Page -- Variables */
     const bioPageLink = '/about/bio'
     const bioPageSmallTitle = 'What I do';
-    const bioPageBigTitle1 = 'Hi, My name is Vasilis Georgoudis,';
-    const bioPageBigTitle2 = 'and I’m a Web Developer based in Greece.';
-    const bioPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
+    const bioPageBigTitle = <span>Hi, My name is Vasilis Georgoudis,<br/>and I’m a Web Developer based in Greece.</span>;
+    const bioPageParagraph = <span>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>;
     const bioBackgroundColor = 'var(--color-yellow-light)';
 
     /* Skills Page -- Variables */
     const skillsPageLink = '/about/skills'
     const skillsPageSmallTitle = 'How I do it';
-    const skillsPageBigTitle1 = 'I always try to use all the latest technologies';
-    const skillsPageBigTitle2 = 'to stay relevant in the field of Web Development.';
+    const skillsPageBigTitle = <span>I always try to use all the latest technologies<br/>to stay relevant in the field of Web Development.</span>;
     const skillsPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
     const skillsBackgroundColor = 'var(--color-mint-light)';
 
     /* More Skills Page -- Variables */
     const moreSkillsPageLink = '/about/moreSkills'
     const moreSkillsPageSmallTitle = 'More Skills';
-    const moreSkillsPageBigTitle1 = 'I do more than just Web.';
+    const moreSkillsPageBigTitle = 'I do more than just Web.';
     const moreSkillsPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
     const moreSkillsBackgroundColor = 'var(--color-red-light)';
 
     /* Contact Page -- Variables */
     const contactPageLink = '/about/contact'
     const contactPageSmallTitle = 'Contact Me';
-    const contactPageBigTitle1 = 'My mom is proud of my work';
-    const contactPageBigTitle2 = 'You will be too!';
+    const contactPageBigTitle = <span>My mom is proud of my work,<br/>You will be too!</span>;
     const contactPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
     const contactBackgroundColor = 'var(--color-purple-light)';
 
@@ -79,8 +76,7 @@ class Main extends Component {
                     component={ 
                       props => <About 
                                 smallTitle  = {bioPageSmallTitle}
-                                bigTitle1   = {bioPageBigTitle1}
-                                bigTitle2   = {bioPageBigTitle2}
+                                bigTitle   = {bioPageBigTitle}
                                 paragraph   = {bioPageParagraph}
                                 color       = {bioBackgroundColor}
                                 picture     = {auebPicture}
@@ -92,8 +88,7 @@ class Main extends Component {
                     component={ 
                       props => <About 
                                 smallTitle  = {skillsPageSmallTitle}
-                                bigTitle1   = {skillsPageBigTitle1}
-                                bigTitle2   = {skillsPageBigTitle2}
+                                bigTitle   = {skillsPageBigTitle}
                                 paragraph   = {skillsPageParagraph}
                                 color       = {skillsBackgroundColor}
                                 picture     = {logosPicture}
@@ -105,7 +100,7 @@ class Main extends Component {
                     component={ 
                       props => <About 
                                 smallTitle  = {moreSkillsPageSmallTitle}
-                                bigTitle1   = {moreSkillsPageBigTitle1}
+                                bigTitle   = {moreSkillsPageBigTitle}
                                 paragraph   = {moreSkillsPageParagraph}
                                 color       = {moreSkillsBackgroundColor}
                                 picture     = {laptopPicture}
@@ -117,8 +112,7 @@ class Main extends Component {
                     component={ 
                       props => <About 
                                 smallTitle  = {contactPageSmallTitle}
-                                bigTitle1   = {contactPageBigTitle1}
-                                bigTitle2   = {contactPageBigTitle2}
+                                bigTitle    = {contactPageBigTitle}
                                 paragraph   = {contactPageParagraph}
                                 color       = {contactBackgroundColor}
                                 picture     = {laptopPicture}

@@ -24,7 +24,7 @@
     transition: all .3s cubic-bezier(0,0,0,.3);
 }
 
-/* This is the black part of the sidebar*/
+/* This is the black part of the sidebar */
 .sidebar__navigation::before{
     content: '';
     position: absolute;
@@ -54,7 +54,7 @@
     align-items: center;
     justify-content: left;
 
-    /* To change the text color on hover, more smoothly*/
+    /* To change the text color on hover, more smoothly */
     transition: color .5s cubic-bezier(0,0,0,1);
 }
 
@@ -144,8 +144,36 @@
     width: 100%;
 }
 
-/* The black box of the active list item should be 100% fixed*/
+/* The black box of the active list item should be 100% fixed */
 .sidebar:hover
 .active a::before{
     width: 100%;
+}
+
+/* media queries 1023*/
+/* Deactivate Sidebar animation when width < 1023px*/
+@media only screen and (max-width: 1023px){
+    .sidebar__navigation{
+        background-color: rgba(0,0,0,0);
+    }
+
+    .sidebar__navigation-list-item a{
+        color: black;
+    }
+    
+    .sidebar__navigation-list-item a::before{
+        content: none;
+    }
+
+    .sidebar__navigation-list-item .active {
+        color: black;
+    }
+
+    /* ----------------------- */
+    /* SHOW SIDEBAR WHEN HOVER */
+    .sidebar:hover
+    .sidebar__navigation{
+        width: 40px;
+    }
+
 }

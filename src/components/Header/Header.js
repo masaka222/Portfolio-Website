@@ -70,7 +70,7 @@ class Header extends Component {
         
         <div className="center_navigation">
           <NavLink exact to='/' id = 'aboutLink' activeClassName='headernav-active' className = 'center_navigation__about' onClick={this.animateAbout}> About </NavLink>
-          <NavLink to='/work' activeClassName='headernav-active' className = 'center_navigation__work' onClick={this.animateWork}> Work </NavLink>
+          <NavLink to='/work' id = 'workLink' activeClassName='headernav-active' className = 'center_navigation__work' onClick={this.animateWork}> Work </NavLink>
         </div>
 
         <div className="social">

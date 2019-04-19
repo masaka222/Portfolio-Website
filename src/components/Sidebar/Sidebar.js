@@ -100,31 +100,31 @@ class Sidebar extends Component {
             <ul className="sidebar__navigation-list">
                 <li className = {"sidebar__navigation-list-item " + this.getActiveClass(this.props.link00)}>
                   <Link exact to={this.props.link00}>
-                    <div className = "list-number">00</div>
+                    <div className = {"list-number"+ this.getActiveClass(this.props.link00)}>00</div>
                     <div className = {"list-text "+ this.getActiveClass(this.props.link00)}> {this.props.title00} </div>
                   </Link>
                 </li>
                 <li className = {"sidebar__navigation-list-item " + this.getActiveClass(this.props.link01)}>
                   <Link exact to={this.props.link01}>
-                    <div className = "list-number">01</div>
+                    <div className = {"list-number"+ this.getActiveClass(this.props.link01)}>01</div>
                     <div className = {"list-text "+ this.getActiveClass(this.props.link01)}> {this.props.title01} </div>
                   </Link>
                 </li>
                 <li className = {"sidebar__navigation-list-item " + this.getActiveClass(this.props.link02)}>
                   <Link exact to={this.props.link02}>
-                    <div className = "list-number">02</div>
+                    <div className = {"list-number"+ this.getActiveClass(this.props.link02)}>02</div>
                     <div className = {"list-text "+ this.getActiveClass(this.props.link02)}> {this.props.title02} </div>
                   </Link>
                 </li>
                 <li className={"sidebar__navigation-list-item " + this.getActiveClass(this.props.link03)}>
                   <Link exact to={this.props.link03}>
-                    <div className = "list-number">03</div>
+                    <div className = {"list-number"+ this.getActiveClass(this.props.link03)}>03</div>
                     <div className = {"list-text "+ this.getActiveClass(this.props.link03)}> {this.props.title03} </div>
                   </Link>
                 </li>
                 <li className={"sidebar__navigation-list-item " + this.getActiveClass(this.props.link04)}>
                   <Link exact to={this.props.link04}>
-                    <div className = "list-number">04</div>
+                    <div className = {"list-number"+ this.getActiveClass(this.props.link04)}>04</div>
                     <div className = {"list-text "+ this.getActiveClass(this.props.link04)}> {this.props.title04} </div>
                   </Link>
                 </li>

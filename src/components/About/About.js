@@ -36,8 +36,7 @@ class About extends React.Component {
           classNames="move">
             <div className='about__text'> 
               <h4  className='about__text-small-title'> {this.props.smallTitle} </h4>
-              <h2  className='about__text-big-title'>   {this.props.bigTitle1} </h2>
-              <h2  className='about__text-big-title'>   {this.props.bigTitle2} </h2>
+              <h2  className='about__text-big-title'>   {this.props.bigTitle} </h2>
               <div  className = 'about__text-paragraph'>
                 <p> {this.props.paragraph} </p>
               </div>
