@@ -150,7 +150,9 @@
     width: 100%;
 }
 
-/* media queries 1023*/
+
+/* MEDIA QUERIES */
+
 /* Deactivate Sidebar animation when width < 1023px*/
 @media only screen and (max-width: 1023px){
     .sidebar__navigation{
@@ -175,5 +177,10 @@
     .sidebar__navigation{
         width: 40px;
     }
+}
 
+@media only screen and (max-width: 768px){
+    .sidebar__navigation-list{
+        font-size: 1rem;
+    }
 }

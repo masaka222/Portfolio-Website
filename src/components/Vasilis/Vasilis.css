@@ -18,3 +18,17 @@
     max-height: 85%;
     width: auto;
 }
+
+@media only screen and (max-width: 768px){
+    .vasilis__picture{
+        bottom: 5rem;
+        max-height: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .vasilis__picture{
+        bottom: 10rem;
+        max-height: 60%;
+    }
+}
