@@ -16,18 +16,11 @@ class About extends React.Component {
   }
 
   componentWillUnmount(){
-    this.setState({appearText: !this.state.appearText})/*
-    if(this.props.location.pathname === '/work'){
-      document.getElementById('aboutLink').classList.remove('headernav-active');
-    }*/
+    this.setState({appearText: !this.state.appearText})
   }
 
   componentDidMount(){
-    //var path = this.props.location.pathname;
-    //if (path.startsWith('/about')){
-      //console.log('starts with about');
       document.getElementById('aboutLink').classList.add('headernav-active');
-    //}
   }
 
   render(){

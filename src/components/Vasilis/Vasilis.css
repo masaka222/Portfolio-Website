@@ -10,11 +10,11 @@
 
 .vasilis__picture{
     position: absolute;
-    bottom: 0rem;
+    bottom: -5rem;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    max-height: 75%;
+    max-height: 95%;
     width: auto;
 }
