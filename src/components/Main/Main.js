@@ -44,8 +44,7 @@ class Main extends Component {
     const contactPageSmallTitle = 'Contact Me';
     const contactPageBigTitle = <span>My mom is proud of my work,<br/>You will be too!</span>;
     const contactPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
-    const contactBackgroundColor = 'var(--color-purple-light)';
-
+    const contactBackgroundColor = 'var(--color-purple-light)';  
 
     return (
       <div className="main" id='main'>
