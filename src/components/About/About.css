@@ -65,7 +65,7 @@
 
 @media only screen and (max-width: 768px){
     .about{
-        grid-template-columns: 65% 35%;
+        grid-template-columns: 70% 30%;
     }
     .about__picture{
         display: none;

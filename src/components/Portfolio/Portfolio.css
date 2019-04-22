@@ -18,3 +18,15 @@
     max-height: 20%;
     width: auto;
 }
+
+@media only screen and (max-width: 768px){
+    .portfolio__picture{
+        max-height: 13%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .portfolio__picture{
+        max-height: 10%;
+    }
+}
