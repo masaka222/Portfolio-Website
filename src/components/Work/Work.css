@@ -75,3 +75,38 @@
     top: 0;
     left: 8rem;
 }
+
+/* MEDIA QUERIES */
+/* ------------- */
+@media only screen and (max-width: 1023px){
+    .work__text-paragraph{
+        font-size: 1rem;
+    }
+
+    .work__text-title{
+        font-size: 3rem;
+        border-bottom: .5rem solid black;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .work{
+        grid-template-columns: 70% 30%;
+    }
+    .work__picture{
+        display: none;
+    }
+    .work::after{
+        content: "";
+        background-image: var(--work-background-picture);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;  
+    }
+}

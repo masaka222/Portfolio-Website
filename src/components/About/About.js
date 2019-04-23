@@ -25,7 +25,7 @@ class About extends React.Component {
 
   render(){
     // Setting my picture variable as a CSS variable, to use it as a background picture
-    document.documentElement.style.setProperty('--background-picture',  `url('${this.props.picture}')`);
+    document.documentElement.style.setProperty('--about-background-picture',  `url('${this.props.picture}')`);
     
     const appearText = this.state;
 

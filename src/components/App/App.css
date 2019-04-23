@@ -70,6 +70,8 @@ a, a:visited, a:hover, a:active {
   transition: opacity 500ms ease-in;
 }
 
+/* MEDIA QUERIES */
+/* ------------- */
 @media only screen and (max-width: 768px){
   .App {
     grid-template-rows: [header-start] 5rem [header-end main-start] calc(100vh - 5rem) [main-end];

@@ -16,7 +16,11 @@ class Work extends React.Component {
   }
 
   render(){
+    // Setting my picture variable as a CSS variable, to use it as a background picture
+    document.documentElement.style.setProperty('--work-background-picture',  `url('${this.props.picture}')`);
+
     const appearText = this.state;
+
     return (
       <div className="work" style = {{ backgroundColor: this.props.color}}>
         <div className='work__text'>
