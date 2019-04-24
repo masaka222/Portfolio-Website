@@ -102,7 +102,8 @@
 }
 
 /* MEDIA QUERIES */
-
+/*---------------*/
+/* --- WIDTH --- */
 @media only screen and (max-width: 768px){
     .social__linkedin{
         margin-right: 3rem;
@@ -144,6 +145,21 @@
         margin-left: 1rem;
     }
 
+    .center_navigation{
+        font-size: 1.1rem; 
+    }
+}
+
+/* --- HEIGTH --- */
+@media only screen and (max-height: 480px){
+    .logo{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .logo__text{
+        font-size: .9rem;
+    }
 
     .center_navigation{
         font-size: 1.1rem; 

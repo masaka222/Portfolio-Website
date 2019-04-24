@@ -72,7 +72,9 @@ a, a:visited, a:hover, a:active {
 
 /* MEDIA QUERIES */
 /* ------------- */
-@media only screen and (max-width: 768px){
+/* --- WIDTH --- */
+@media only screen and (max-width: 768px),
+only screen and (max-height: 480px){
   .App {
     grid-template-rows: [header-start] 5rem [header-end main-start] calc(100vh - 5rem) [main-end];
   }
@@ -85,6 +87,8 @@ a, a:visited, a:hover, a:active {
     font-size: 0.5rem;
   }
 }
+
+
 /*
 .appGif{
   position: absolute;

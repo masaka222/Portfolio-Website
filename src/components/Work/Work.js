@@ -31,7 +31,7 @@ class Work extends React.Component {
           timeout={400}
           classNames="move">
             <div>
-              <h2  className='work__text-title'>   {this.props.Title1} </h2>
+              <h2  className='work__text-title'>   {this.props.Title1} </h2> <br/>
               <h2  className='work__text-title'>   {this.props.Title2} </h2>
             </div>
         </CSSTransition>  
