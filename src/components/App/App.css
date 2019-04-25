@@ -73,6 +73,7 @@ a, a:visited, a:hover, a:active {
 /* MEDIA QUERIES */
 /* ------------- */
 /* --- WIDTH --- */
+/* -- HEIGHT  -- */
 @media only screen and (max-width: 768px),
 only screen and (max-height: 480px){
   .App {
@@ -87,33 +88,3 @@ only screen and (max-height: 480px){
     font-size: 0.5rem;
   }
 }
-
-
-/*
-.appGif{
-  position: absolute;
-  top: -100%;
-  bottom: -100%;
-  left: -100%;
-  right: -100%;
-  margin: auto;
-  z-index: 3;
-  opacity: 0;
-  
-}
-
-.appGif__animation{
-  animation: gifAnimation 1.4s cubic-bezier(.36,.03,.98,-0.08) 0s;
-}
-
-@keyframes gifAnimation {
-  0%{
-      opacity: 0;
-  }
-  50%{
-      opacity: 1;
-  }
-  100%{    
-      opacity: 0;
-  }
-}*/

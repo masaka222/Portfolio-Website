@@ -10,25 +10,24 @@
 
 .vasilis__picture{
     position: absolute;
-    bottom: 0rem;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    max-height: 85%;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);  
+
+    max-height: 80%;
     width: auto;
 }
 
 @media only screen and (max-width: 768px){
     .vasilis__picture{
-        bottom: 5rem;
-        max-height: 70%;
+        max-height: 60%;
     }
 }
 
 @media only screen and (max-width: 480px){
     .vasilis__picture{
-        bottom: 10rem;
-        max-height: 60%;
+        max-height: 50%;
     }
 }
+
+

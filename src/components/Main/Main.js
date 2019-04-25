@@ -9,6 +9,7 @@ import About from '../About/About';
 import auebPicture from './aueb.png';
 import logosPicture from './logos.png';
 import laptopPicture from './laptop.png';
+import momPicture from './mom@0,1x.png';
 
 import {
   CSSTransition,
@@ -114,7 +115,7 @@ class Main extends Component {
                                 bigTitle    = {contactPageBigTitle}
                                 paragraph   = {contactPageParagraph}
                                 color       = {contactBackgroundColor}
-                                picture     = {laptopPicture}
+                                picture     = {momPicture}
                                 location    = {location}
                               />
                     }/>
