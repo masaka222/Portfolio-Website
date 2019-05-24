@@ -23,7 +23,12 @@ class Main extends Component {
     const bioPageLink = '/about/bio'
     const bioPageSmallTitle = 'What I do';
     const bioPageBigTitle = <span>Hi, My name is Vasilis Georgoudis,<br/>and I’m a Web Developer based in Greece.</span>;
-    const bioPageParagraph = <span>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>;
+    const bioPageParagraph = <span> I've always been drawn to the world of Web Development.<br/> 
+                                    My journey began when I started studying Computer Science at Athens University 
+                                    of Economics and Business. <br/> During that time, I worked on multiple front-end 
+                                    projects, built a <a target="_blank" href='https://wordpress.org/plugins/all-in-one-metadata/'> 
+                                    plugin with Wordpress</a> and even worked on my design skills to deliver beautiful user experiences. <br/>
+                                    I enjoy each aspect of my job, and try to be precise with every pixel. </span>;
     const bioBackgroundColor = 'var(--color-yellow-light)';
 
     /* Skills Page -- Variables */
