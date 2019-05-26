@@ -35,7 +35,24 @@ class Main extends Component {
     const skillsPageLink = '/about/skills'
     const skillsPageSmallTitle = 'How I do it';
     const skillsPageBigTitle = <span>I always try to use all the latest technologies<br/>to stay relevant in the field of Web Development.</span>;
-    const skillsPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
+    const skillsPageParagraph = <span>
+                                      <div id='left'>
+                                        <h4 className='main-small-title'> Front end</h4><br/>
+                                        HTML<br/>
+                                        CSS (Sass, CSS Grid, Flexbox)<br/>
+                                        Javascript (ES6)<br/>
+                                        React<br/>
+                                        Redux
+                                      </div>
+                                      <div id='right'>
+                                        <h4 className='main-small-title'> Back end</h4><br/>
+                                        SQL<br/>
+                                        NodeJS<br/>
+                                        Firebase<br/>
+                                        <h4 className='main-small-title' style= {{marginTop: '2rem'}}> CMS </h4><br/>
+                                        Wordpress
+                                      </div>
+                                </span>;
     const skillsBackgroundColor = 'var(--color-mint-light)';
 
     /* More Skills Page -- Variables */

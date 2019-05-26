@@ -47,6 +47,22 @@
     animation: main2-2 .7s cubic-bezier(.36,.03,.98,-0.08) 0s;
 }
 
+/* Paragraph text styles*/
+.main-small-title{
+    font-size: 1rem;
+    color: black;
+    margin-bottom: .5rem;
+}
+
+#left{
+  width: 50%;
+  float: left;
+}
+
+#right{
+  margin-left: 60%; /* Change this to whatever the width of your left column is*/
+}
+
 @keyframes main1-1 {
     0%{
         right: 0;
