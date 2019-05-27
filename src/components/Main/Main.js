@@ -34,7 +34,7 @@ class Main extends Component {
     /* Skills Page -- Variables */
     const skillsPageLink = '/about/skills'
     const skillsPageSmallTitle = 'How I do it';
-    const skillsPageBigTitle = <span>I always try to use all the latest technologies<br/>to stay relevant in the field of Web Development.</span>;
+    const skillsPageBigTitle = <span>I always try to use all the latest technologies<br/>to stay up-to-date in the ever changing world of Web Development.</span>;
     const skillsPageParagraph = <span>
                                       <div id='left'>
                                         <h4 className='main-small-title'> Front end</h4><br/>
@@ -58,8 +58,23 @@ class Main extends Component {
     /* More Skills Page -- Variables */
     const moreSkillsPageLink = '/about/moreSkills'
     const moreSkillsPageSmallTitle = 'More Skills';
-    const moreSkillsPageBigTitle = 'I do more than just Web.';
-    const moreSkillsPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
+    const moreSkillsPageBigTitle = <span>I do more than just Web.</span>;
+    const moreSkillsPageParagraph = <span>
+                                      <div style= {{marginBottom: '2rem'}}>I'm also very familiar with Object Oriented Programming, User Experience and Design, and have also spent some time doing iOS developement</div>
+                                      <div id='left'>
+                                        <h4 className='main-small-title'> Programming </h4><br/>
+                                        Java<br/>
+                                        C / C++<br/>
+                                        MATLAB<br/>
+                                      </div>
+                                      <div id='right'>
+                                        <h4 className='main-small-title'> Software</h4><br/>
+                                        Adobe Photoshop<br/>
+                                        Adobe Illustrator<br/>
+                                        Adobe Xd<br/>
+                                        Xcode<br/>
+                                      </div>
+                                    </span>;
     const moreSkillsBackgroundColor = 'var(--color-red-light)';
 
     /* Contact Page -- Variables */
