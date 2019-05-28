@@ -54,6 +54,12 @@
     border-bottom: 3px solid var(--color-grey-light);
     transition: border-bottom .3s cubic-bezier(0,0,0,.3);
 }
+.center_navigation__email{
+    text-decoration: none;
+    padding: .2rem;
+    border-bottom: 1.5px solid var(--color-grey-light);
+    transition: border-bottom .3s cubic-bezier(0,0,0,.3);
+}
 
 .center_navigation__about{
     margin-right: 2rem;
@@ -67,6 +73,9 @@
 .center_navigation__work:hover,
 .headernav-active{
     border-bottom: 3px solid black;
+}
+.center_navigation__email:hover{
+    border-bottom: 1.5px solid black;
 }
 
 .headernav-active{

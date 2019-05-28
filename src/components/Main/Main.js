@@ -81,7 +81,7 @@ class Main extends Component {
     const contactPageLink = '/about/contact'
     const contactPageSmallTitle = 'Contact Me';
     const contactPageBigTitle = <span>My mom is proud of my work,<br/>You will be too!</span>;
-    const contactPageParagraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris';
+    const contactPageParagraph = <span>Send me an email at: <a href="mailto:vasilios.georgoudis@hotmail.com" className='center_navigation__email'>vasilios.georgoudis@hotmail.com</a> or contact me through my LinkedIn page on the top right of the screen, and let's build something together! </span>;
     const contactBackgroundColor = 'var(--color-purple-light)';  
 
     return (
