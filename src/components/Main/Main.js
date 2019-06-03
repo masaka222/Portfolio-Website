@@ -60,7 +60,7 @@ class Main extends Component {
     const moreSkillsPageSmallTitle = 'More Skills';
     const moreSkillsPageBigTitle = <span>I do more than just Web.</span>;
     const moreSkillsPageParagraph = <span>
-                                      <div style= {{marginBottom: '2rem'}}>I'm also very familiar with Object Oriented Programming, User Experience and Design, and have also spent some time doing iOS developement</div>
+                                      <div style= {{marginBottom: '5rem'}}>I'm also very familiar with Object Oriented Programming, User Experience and Design, and have also spent some time doing iOS developement</div>
                                       <div id='left'>
                                         <h4 className='main-small-title'> Programming </h4><br/>
                                         Java<br/>
