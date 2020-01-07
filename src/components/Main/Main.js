@@ -24,8 +24,8 @@ class Main extends Component {
     const bioPageSmallTitle = 'What I do';
     const bioPageBigTitle = <span>Hi, My name is Vasilis Georgoudis,<br/>and I’m a Web Developer based in Greece.</span>;
     const bioPageParagraph = <span> I've always been drawn to the world of Web Development.<br/> 
-                                    My journey began when I started studying Computer Science at Athens University 
-                                    of Economics and Business. <br/> During that time, I worked on multiple front-end 
+                                    My journey began at Athens University of Economics and Business, where I studied Computer Science. <br/>
+                                    During that time, I worked on multiple front-end 
                                     projects, built a <a target="_blank" href='https://wordpress.org/plugins/all-in-one-metadata/'> 
                                     plugin with Wordpress</a> and even worked on my design skills to deliver beautiful user experiences. <br/>
                                     I enjoy each aspect of my job, and try to be precise with every pixel. </span>;
@@ -34,7 +34,7 @@ class Main extends Component {
     /* Skills Page -- Variables */
     const skillsPageLink = '/about/skills'
     const skillsPageSmallTitle = 'How I do it';
-    const skillsPageBigTitle = <span>I always try to use all the latest technologies<br/>to stay up-to-date in the ever changing world of Web Development.</span>;
+    const skillsPageBigTitle = <span>I like to use all the latest technologies<br/>to stay up-to-date in the ever changing world of Web Development.</span>;
     const skillsPageParagraph = <span>
                                       <div id='left'>
                                         <h4 className='main-small-title'> Front end</h4><br/>
