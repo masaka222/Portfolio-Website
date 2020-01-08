@@ -7,9 +7,9 @@ import Portfolio from '../Portfolio/Portfolio';
 import Work from '../Work/Work';
 
 import bullseye from './bullseye@0,1x.png';
-import mountains from './mountains.png';
-import camera from './camera2.png';
-import area from './area-white.png';
+import mountains from './mountains@0,33x.png';
+import camera from './camera2@0,25x.png';
+import area from './area-white@0,75x.png';
 
 import {
   CSSTransition,

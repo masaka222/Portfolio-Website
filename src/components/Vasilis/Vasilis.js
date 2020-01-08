@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Vasilis.css';
-import profilePicture from './vasilis4.png';
+import profilePicture from './vasilis4@0,33x.png';
 
 class Vasilis extends Component {
   render() {

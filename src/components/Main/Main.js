@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Vasilis from '../Vasilis/Vasilis';
 import About from '../About/About';
 
-import auebPicture from './aueb.png';
+import auebPicture from './aueb@0,33x.png';
 import logosPicture from './logos.png';
 import laptopPicture from './laptop.png';
 import momPicture from './mom@0,1x.png';
@@ -22,8 +22,8 @@ class Main extends Component {
     /* Bio Page -- Variables */
     const bioPageLink = '/about/bio'
     const bioPageSmallTitle = 'What I do';
-    const bioPageBigTitle = <span>Hi, My name is Vasilis Georgoudis,<br/>and I’m a Web Developer based in Greece.</span>;
-    const bioPageParagraph = <span> I've always been drawn to the world of Web Development.<br/> 
+    const bioPageBigTitle   = <span>Hi, My name is Vasilis Georgoudis,<br/>and I’m a Web Developer based in Greece.</span>;
+    const bioPageParagraph  = <span>I've always been drawn to the world of Web Development.<br/> 
                                     My journey began at Athens University of Economics and Business, where I studied Computer Science. <br/>
                                     During that time, I worked on multiple front-end 
                                     projects, built a <a target="_blank" href='https://wordpress.org/plugins/all-in-one-metadata/'> 
