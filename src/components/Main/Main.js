@@ -6,10 +6,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Vasilis from '../Vasilis/Vasilis';
 import About from '../About/About';
 
-import auebPicture from './aueb@0,33x.png';
-import logosPicture from './logos.png';
-import laptopPicture from './laptop.png';
-import momPicture from './mom@0,1x.png';
+import auebPicture from './aueb@0,33x-compressor.png';
+import logosPicture from './logos-compressor.png';
+import laptopPicture from './laptop-compressor.png';
+import momPicture from './mom@0,1x-compressor.png';
 
 import {
   CSSTransition,

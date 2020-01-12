@@ -6,10 +6,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Portfolio from '../Portfolio/Portfolio';
 import Work from '../Work/Work';
 
-import bullseye from './bullseye@0,1x.png';
-import mountains from './mountains@0,33x.png';
-import camera from './camera2@0,25x.png';
-import area from './area-white@0,75x.png';
+import bullseye from './bullseye@0,1x-compressor.png';
+import mountains from './mountains@0,33x-compressor.png';
+import camera from './camera2@0,25x-compressor.png';
+import area from './area-white@0,75x-compressor.png';
 
 import {
   CSSTransition,
