@@ -46,9 +46,9 @@ class Main extends Component {
                                       </div>
                                       <div id='right'>
                                         <h4 className='main-small-title'> Back end</h4><br/>
-                                        SQL<br/>
                                         NodeJS<br/>
-                                        Firebase<br/>
+                                        Express<br/>
+                                        Relational DB<br/>
                                         <h4 className='main-small-title' style= {{marginTop: '2rem'}}> CMS </h4><br/>
                                         Wordpress
                                       </div>

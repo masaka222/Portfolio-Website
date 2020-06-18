@@ -62,12 +62,12 @@ class Main2 extends Component {
           <Sidebar
             link00 = '/work'
             title00 = 'Portfolio'
-            link01 = {bullseyeLink}
-            title01 = 'Bullseye Burger House'
-            link02 = {DMstudioLink}
-            title02 = 'DM Studio Animation'
-            link03 = {snowhuntLink}
-            title03 = 'Snowhunt Transition'
+            link01 = {snowhuntLink}
+            title01 = 'Snowhunt Transition'
+            link02 = {bullseyeLink}
+            title02 = 'Bullseye Burger House'
+            link03 = {DMstudioLink}
+            title03 = 'DM Studio Animation'
             link04 = {area2071Link}
             title04 = 'Area2071 Parallax Effect'
           />
