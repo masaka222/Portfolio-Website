@@ -28,6 +28,7 @@ class Main extends Component {
                                     During that time, I worked on multiple front-end 
                                     projects, built a <a target="_blank" href='https://wordpress.org/plugins/all-in-one-metadata/'> 
                                     plugin with Wordpress</a> and even worked on my design skills to deliver beautiful user experiences. <br/>
+                                    Doing that, I was able to help both large scale and smaller sized companies with their products throughout the years. <br/>
                                     I enjoy each aspect of my job, and try to be precise with every pixel. </span>;
     const bioBackgroundColor = 'var(--color-yellow-light)';
 
